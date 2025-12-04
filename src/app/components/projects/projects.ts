@@ -120,6 +120,8 @@ export class Projects {
   }
 
   navigateToContact(): void {
-    this.router.navigate(['/contact']);
+    this.router.navigate(['/contact']).then(() => {
+      window.scrollTo(0, 0); 
+    });;;
   }
 }

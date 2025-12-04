@@ -98,10 +98,14 @@ export class Clients {
   constructor(private router: Router) {}
 
   navigateToContact() {
-    this.router.navigate(['/contact']);
+    this.router.navigate(['/contact']).then(() => {
+      window.scrollTo(0, 0); 
+    });;;
   }
 
   navigateToPortfolio() {
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/portfolio']).then(() => {
+      window.scrollTo(0, 0); 
+    });;;
   }
 }

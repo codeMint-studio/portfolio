@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { ExtraOptions, Routes } from '@angular/router';
 import { Home } from './components/home/home';
 import { Services } from './components/services/services';
 import { Clients } from './components/clients/clients';
@@ -17,3 +17,4 @@ export const routes: Routes = [
   { path: 'contact', component: Contact },
   { path: '**', redirectTo: '' }
 ];
+

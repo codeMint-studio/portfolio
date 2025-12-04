@@ -43,10 +43,14 @@ export class Home {
   constructor(private router: Router) {}
 
   navigateToPortfolio() {
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/portfolio']).then(() => {
+      window.scrollTo(0, 0); 
+    });;
   }
 
   navigateToContact() {
-    this.router.navigate(['/contact']);
+    this.router.navigate(['/contact']).then(() => {
+      window.scrollTo(0, 0); 
+    });;;
   }
 }

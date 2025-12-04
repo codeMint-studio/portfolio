@@ -48,10 +48,14 @@ export class Portfolio {
   constructor(private router: Router) {}
 
   navigateToContact() {
-    this.router.navigate(['/contact']);
+    this.router.navigate(['/contact']).then(() => {
+      window.scrollTo(0, 0); 
+    });;;
   }
 
   navigateToProjects() {
-    this.router.navigate(['/projects']);
+    this.router.navigate(['/projects']).then(() => {
+      window.scrollTo(0, 0); 
+    });;;
   }
 }
